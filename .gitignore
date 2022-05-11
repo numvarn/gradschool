@@ -1,3 +1,4 @@
+manage.py
 env/*
 db.sqlite3
 runserver_local.sh
