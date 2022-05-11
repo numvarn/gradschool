@@ -1,0 +1,8 @@
+django>=3.0, < 4.0
+netaddr
+psycopg2
+dj-database-url
+django-bootstrap4
+djangorestframework
+markdown
+django-filter
