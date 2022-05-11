@@ -1,4 +1,4 @@
-django>=3.0, < 4.0
+# django>=3.0, < 4.0
 netaddr
 psycopg2
 dj-database-url
