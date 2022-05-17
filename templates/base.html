@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Medicio Bootstrap Template - Index</title>
+    <title>สำนักงานบัฒฑิตศึกษา</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -14,7 +14,10 @@
     <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
+    {% comment %}
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+    {% endcomment %}
+    <link href="https://fonts.googleapis.com/css?family=Prompt|Sarabun&display=swap" rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
     <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" />
@@ -41,8 +44,8 @@
     <!-- ======= Top Bar ======= -->
     <div id="topbar" class="d-flex align-items-center fixed-top">
       <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-        <div class="align-items-center d-none d-md-flex"><i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM</div>
-        <div class="d-flex align-items-center"><i class="bi bi-phone"></i> Call us now +1 5589 55488 55</div>
+        <div class="align-items-center d-none d-md-flex"><i class="bi bi-clock"></i>เปิดทำการ จันทร์ - ศุกร์, 8.00 น. ถึง 16.30 น.</div>
+        <div class="d-flex align-items-center"><i class="bi bi-phone"></i> ติดต่อ 045-617982</div>
       </div>
     </div>
 
@@ -55,15 +58,12 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
-            <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+            <li><a class="nav-link scrollto" href="#hero">หน้าหลัก</a></li>
             <li class="dropdown">
-              <a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+              <a href="#"><span>เกี่ยวกับบัณฑิตศึกษา</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="#">Drop Down 1</a></li>
+                <li><a class="nav-link scrollto" href="#about">ข้อมูลพื้นฐาน</a></li>
+                {% comment %}
                 <li class="dropdown">
                   <a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
@@ -74,18 +74,57 @@
                     <li><a href="#">Deep Drop Down 5</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
+                {% endcomment %}
+                <li><a class="nav-link scrollto" href="#about">วิสัยทัศน์/พันธกิจ</a></li>
+                <li><a href="#">นโยบายมหาวิทยาลัย</a></li>
+                <li><a class="nav-link scrollto" href="#organize">โครงสร้างองค์กร</a></li>
+                <li><a href="#">รายงานประจำปี</a></li>
+                <li><a href="#">งานประกันคุณภาพฯ</a></li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#"><span>บริการ</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a class="nav-link scrollto" href="#services">ข้อมูลการบริการ</a></li>
+                <li><a href="#">ปฏิทินนักศึกษา</a></li>
+                <li><a href="#">ข้อบังคับ/ประกาศ</a></li>
+                <li><a href="#">คู่มือการทำวิทยานิพนธ์</a></li>
+                <li><a href="#">ดาวน์โหลดใบคำร้อง</a></li>
+                <li><a href="#">คลังภาพกิจกรรม</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"><span>หลักสูตร</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a class="nav-link scrollto" href="#departments">หลักสูตรที่เปิดสอน</a></li>
+                <li><a href="#">หลักสูตรระดับปริญญาโท</a></li>
+                <li><a href="#">หลักสูตรระดับปริญญาเอก</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"><span>บุคลากร</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a class="nav-link scrollto" href="#doctors">รายชื่อบุคลากร</a></li>
+                <li><a href="#">คณะกรรมการอำนวยการ</a></li>
+                <li><a href="#">คณะกรรมการบริหารหลักสูตรปริญญาโท</a></li>
+                <li><a href="#">คณะกรรมการบริหารหลักสูตรปริญญาเอก</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"><span>งานวิจัยและบริการวิชาการ</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">วารสารวิชาการ</a></li>
+                <li><a href="#">การประชุมวิชาการ</a></li>
+                <li><a href="#">ฐานข้อมูลงานวิจัย</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">ติดต่อ</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
 
-        <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+        <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">ติดต่อสอบถาม</span></a>
       </div>
     </header>
     <!-- End Header -->
@@ -192,8 +231,13 @@
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>About Us</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2>เกี่ยวกับบัณฑิตศึกษา</h2>
+            <p>
+              การจัดการศึกษาระดับบัณฑิตศึกษา มุ่งเน้นการพัฒนาครู คณาจารย์ นักวิชาการ บุคลากรวิชาชีพและนักวิชาชีพชั้นสูง ให้มีความรู้ความสามารถลุ่มลึกในแต่ละสาขาในระดับสากล ตลอดจนมีวิสัยทัศน์ที่กว้างไกล สร้างสรรค์องค์ความรู้ใหม่
+              เชื่อมโยงองค์ความรู้และภูมิปัญญาท้องถิ่นกับศาสตร์ที่เป็นสากลให้มีผลต่อการพัฒนาทางวิชาการและให้เกิดการพัฒนาท้องถิ่นอย่างแท้จริง
+            </p>
+            <br />
+            <p>สาระของหลักสูตรที่เป็นทั้งวิชาการและวิชาชีพ มุ่งพัฒนาคนให้มีความสมดุลทั้งด้านความรู้ ความคิด ความสามารถ ความดีงามและความรับผิดชอบต่อสังคม โดยเน้นการพัฒนาวิชาการ วิชาชีพชั้นสูงและการค้นคว้าวิจัย เพื่อสร้างองค์ความรู้อันจะนำไปสู่การพัฒนาสังคม</p>
           </div>
 
           <div class="row">
@@ -201,18 +245,173 @@
               <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="" />
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-              <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h3>วิสัยทัศน์ (Vision)</h3>
+              <p class="fst-italic">บัณฑิตศึกษามหาวิทยาลัยราชภัฏศรีสะเกษ มุ่งเน้นพัฒนาหลักวิชาการสู่ความเป็นเลิศและความเป็นสากล ภายใต้ระบบการบริหารจัดการที่มีประสิทธิภาพ และการขยายเครือข่ายสู่ความเป็นองค์กรนานาชาติ</p>
+              <h3>พันธกิจ (Mission)</h3>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li>1. ผลิตบัณฑิตให้เป็นผู้มีความสามารถพึ่งตนเองได้มีจิตสำนึกรับผิดชอบต่อ สาธารณะ</li>
+                <li>2. วิจัยและพัฒนาองค์ความรู้ใหม่</li>
+                <li>3. บริการวิชาการแก่สังคม</li>
+                <li>4. ทำนุบำรุงศิลปวัฒนธรรม</li>
               </ul>
-              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <h3>วัตถุประสงค์</h3>
+              <ul>
+                <li>1. เพื่อพัฒนานักวิชาการ และบุคลากรทางการศึกษาให้เป็นผู้มีความรู้ ความสามารถในศาสตร์สาขา เฉพาะทาง</li>
+                <li>2. เพื่อเป็นแหล่งวิชาการชั้นสูงของท้องถิ่น</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
+      <!-- ======= Frequently Asked Questioins Section ======= -->
+      <section id="organize" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>โครงสร้างองค์กร</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+
+          <ul class="faq-list">
+            <li>
+              <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">คณะกรรมการอำนวยการบัณฑิตศึกษา<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                <div class="mb-2 mt-4">คณะกรรมการอำนวยการบัณฑิตศึกษา ประกอบด้วย</div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">อธิการบดี</div>
+                  <div class="col-3">เป็นประธานกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">รองอธิการบดีที่เกี่ยวข้อง</div>
+                  <div class="col-3">เป็นรองประธานกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">ผู้อำนวยการสำนักที่เกี่ยวข้อง</div>
+                  <div class="col-3">เป็นกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">ผู้ทรงคุณวุฒิหรือผู้แทนสาขาที่เปิดสอน สาขาละ 1 คน</div>
+                  <div class="col-3">เป็นกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">ประธานบัณฑิตศึกษา</div>
+                  <div class="col-3">เป็นกรรมการและเลขานุการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">เลขานุการบัณฑิตศึกษา</div>
+                  <div class="col-3">เป็นกรรมการและผู้ช่วยเลขานุการ</div>
+                </div>
+
+                <div class="mb-2 mt-4">คณะกรรมการอำนวยการบัณฑิตศึกษา มีหน้าที่ดังต่อไปนี้</div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(1) อำนวยการสนับสนุน ส่งเสริม กำกับและดูแลกิจการบัณฑิตศึกษา ให้เป็นไปตามเกณฑ์มาตรฐาน แนวปฏิบัติ ระเบียบ ข้อบังคับและนโยบาย</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(2) กำหนดบทบาท หน้าที่ ภาระงานของคณะกรรมการต่างๆ อาจารย์ประจำระดับบัณฑิตศึกษา และดูแลการประเมินผลการสอน</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(3) ส่งเสริมและพัฒนาการจัดการบัณฑิตศึกษาให้มีคุณภาพ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(4) ปฏิบัติภาระงานอื่นตามที่สภามหาวิทยาลัยมอบหมาย</div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">คณะกรรมการบัณฑิตศึกษา<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                <div class="mb-2 mt-4">คณะกรรมการบัณฑิตศึกษา ประกอบด้วย</div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">ประธานบัณฑิตศึกษา</div>
+                  <div class="col-3">เป็นประธานกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">รองประธานบัณฑิตศึกษา</div>
+                  <div class="col-3">เป็นกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">ประธานหลักสูตรระดับบัณฑิตศึกษา</div>
+                  <div class="col-3">เป็นกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">เลขานุการบัณฑิตศึกษา</div>
+                  <div class="col-3">เป็นกรรมการและเลขานุการ</div>
+                </div>
+
+                <div class="mb-2 mt-4">คณะกรรมการบัณฑิตศึกษา มีหน้าที่ดังต่อไปนี้</div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(1) บริหารงานวิชาการของบัณฑิตศึกษา</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(2) จัดทำแผนงาน โครงการ และงบประมาณของบัณฑิตศึกษา</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(3) บริหารงานสอบและงานวิทยานิพนธ์ ดุษฎีนิพนธ์</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(4) ควบคุมมาตรฐานและการประเมินผลการศึกษา ในสาขาวิชาตามมาตรฐานของบัณฑิตศึกษา</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(5) กำกับ ติดตาม การดำเนินงานตามมาตรฐานหลักสูตรและการประกันคุณภาพการศึกษาของบัณฑิตศึกษา</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(6) พิจารณาข้อบังคับ ระเบียบ ประกาศ ที่เกี่ยวข้องกับการบริหารจัดการบัณฑิตศึกษา เพื่อเสนอคณะกรรมการมหาวิทยาลัยที่เกี่ยวข้อง</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(7) ปฏิบัติภาระงานอื่นตามที่มหาวิทยาลัยมอบหมาย</div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">คณะกรรมการบริหารหลักสูตร<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                <div class="mb-2 mt-4">คณะกรรมการบริหารหลักสูตร ประกอบด้วย</div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">ประธานหลักสูตรระดับบัณฑิตศึกษาที่เปิดสอน</div>
+                  <div class="col-3">เป็นประธานกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">อาจารย์ประจำหลักสูตรระดับบัณฑิตศึกษา</div>
+                  <div class="col-3">เป็นกรรมการ</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col-5">อาจารย์ประจำหลักสูตรระดับบัณฑิตศึกษา ที่ได้รับมอบหมาย</div>
+                  <div class="col-3">เป็นกรรมการและเลขานุการ</div>
+                </div>
+
+                <div class="mb-2 mt-4">คณะกรรมการบริหารหลักสูตร มีหน้าที่ดังต่อไปนี้</div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(1) พัฒนาการเรียนการสอนในสาขาวิชา พัฒนาและปรับปรุงหลักสูตรระดับบัณฑิตศึกษาให้ทันสมัยเกิดประสิทธิภาพและประสิทธิผลและเป็นไปตามเกณฑ์มาตรฐานหลักสูตรที่กำหนด</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(2) ดำเนินงานการประกันคุณภาพการศึกษาระดับหลักสูตร ให้เป็นไปตามเกณฑ์มาตรฐานหลักสูตรและการประเมินของมหาวิทยาลัย</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(3) ให้คำปรึกษานักศึกษาระดับบัณฑิตศึกษา</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(4) เสนอชื่ออาจารย์ที่ปรึกษา อาจารย์ผู้สอน คณะกรรมการควบคุมวิทยานิพนธ์ ดุษฎีนิพนธ์ กรรมการสอบวิทยานิพนธ์ ดุษฎีนิพนธ์ต่อประธานบัณฑิตศึกษาหรือผู้ที่ได้รับมอบหมายเพื่อพิจารณาแต่งตั้ง</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(5) ให้ความเห็นชอบหัวข้อวิทยานิพนธ์ ดุษฎีนิพนธ์</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(6) กำกับการเรียนการสอน การสอบและการควบคุมวิทยานิพนธ์ ดุษฎีนิพนธ์ตามมาตรฐานการประกันคุณภาพของบัณฑิตศึกษา</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(7) พัฒนาศักยภาพอาจารย์ประจำหลักสูตรและอาจารย์ผู้รับผิดชอบหลักสูตร ระดับบัณฑิตศึกษา</div>
+                </div>
+                <div class="row mb-2 ms-4">
+                  <div class="col">(8) ปฏิบัติภาระงานอื่นที่อธิการบดีหรือประธานบัณฑิตศึกษามอบหมาย</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Frequently Asked Questioins Section -->
+
       <!-- End About Us Section -->
 
       <!-- ======= Counts Section ======= -->
@@ -296,34 +495,34 @@
       <section id="services" class="services services">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Services</h2>
+            <h2>ข้อมูลการบริการ</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
 
           <div class="row">
             <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon"><i class="fas fa-heartbeat"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <h4 class="title"><a href="">ปฏิทินนักศึกษา</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
             <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon"><i class="fas fa-pills"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <h4 class="title"><a href="">ข้อบังคับ/หลักเกณฑ์</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
             <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
               <div class="icon"><i class="fas fa-hospital-user"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <h4 class="title"><a href="">คู่มือการทำวิทยานิพนธ์</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
             <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon"><i class="fas fa-dna"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <h4 class="title"><a href="">ดาวน์โหลดใบคำร้อง</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
             <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon"><i class="fas fa-wheelchair"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <h4 class="title"><a href="">คลังภาพกิจกรรม</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
             <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
@@ -340,7 +539,7 @@
       <section id="appointment" class="appointment section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Make an Appointment</h2>
+            <h2>ติดต่อนัดหมาย</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
 
@@ -396,7 +595,7 @@
       <section id="departments" class="departments">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Departments</h2>
+            <h2>หลักสูตรที่เปิดสอน</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
 
@@ -405,26 +604,14 @@
               <ul class="nav nav-tabs flex-column">
                 <li class="nav-item">
                   <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                    <h4>Cardiology</h4>
+                    <h4>หลักสูตรระดับปริญญาเอก</h4>
                     <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
                   </a>
                 </li>
                 <li class="nav-item mt-2">
                   <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                    <h4>Neurology</h4>
+                    <h4>หลักสูตรระดับปริญญาโท</h4>
                     <p>Voluptas vel esse repudiandae quo excepturi.</p>
-                  </a>
-                </li>
-                <li class="nav-item mt-2">
-                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                    <h4>Hepatology</h4>
-                    <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
-                  </a>
-                </li>
-                <li class="nav-item mt-2">
-                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                    <h4>Pediatrics</h4>
-                    <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
                   </a>
                 </li>
               </ul>
@@ -475,8 +662,7 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="" />
@@ -489,8 +675,7 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="" />
@@ -503,8 +688,7 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="" />
@@ -517,8 +701,7 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="" />
@@ -531,8 +714,7 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="" />
@@ -552,7 +734,7 @@
       <section id="doctors" class="doctors section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Doctors</h2>
+            <h2>รายชื่อบุคลากร</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
 
@@ -637,7 +819,7 @@
       <section id="gallery" class="gallery">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Gallery</h2>
+            <h2>คลังภาพกิจกรรม</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
 
@@ -827,7 +1009,7 @@
       <section id="contact" class="contact">
         <div class="container">
           <div class="section-title">
-            <h2>Contact</h2>
+            <h2>ติดต่อกับบัณฑิตศึกษา</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
         </div>
@@ -835,7 +1017,7 @@
         <div>
           <iframe
             style="border: 0; width: 100%; height: 350px"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.8925226302092!2d104.36048592798204!3d15.115171158911163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3116e389f04490f1%3A0xa92e201f760e6182!2z4Lit4Liy4LiE4Liy4Lij4LmA4LiJ4Lil4Li04Lih4Lie4Lij4Liw4LmA4LiB4Li14Lii4Lij4LiV4Li0IDgwIOC4nuC4o-C4o-C4qeC4siA1IOC4mOC4seC4meC4p-C4suC4hOC4oSAyNTUw!5e0!3m2!1sth!2sth!4v1652526462277!5m2!1sth!2sth"
             frameborder="0"
             allowfullscreen
           ></iframe>
@@ -848,22 +1030,23 @@
                 <div class="col-md-12">
                   <div class="info-box">
                     <i class="bx bx-map"></i>
-                    <h3>Our Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <h3>ที่อยู่สำหรับติดต่อ</h3>
+                    <p>สำนักงานบัณฑิตศึกษา,​ มหาวิทยาลัยราชภัฏศรีสะเกษ</p>
+                    <p>319 ถนนไทยพันทา ตำบลโพธิ์ อำเภอเมือง จังหวัดศรีสะเกษ 33000</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="info-box mt-4">
                     <i class="bx bx-envelope"></i>
                     <h3>Email Us</h3>
-                    <p>info@example.com<br />contact@example.com</p>
+                    <p>grad@sskru.ac.th<br />sirikanlaya.s@sskru.ac.th</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="info-box mt-4">
                     <i class="bx bx-phone-call"></i>
                     <h3>Call Us</h3>
-                    <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
+                    <p>โทร 045-617982<br />โทรสาร 045-643607</p>
                   </div>
                 </div>
               </div>
@@ -890,7 +1073,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"><button type="submit">ส่งข้อความ</button></div>
               </form>
             </div>
           </div>
@@ -907,12 +1090,12 @@
           <div class="row">
             <div class="col-lg-3 col-md-6">
               <div class="footer-info">
-                <h3>Medicio</h3>
+                <h3>สำนักงานบัฒฑิตศึกษา</h3>
                 <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA<br /><br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
+                  319 ถนนไทยพันทา ตำบลโพธิ์<br />
+                  อำเภอเมือง จังหวัดศรีสะเกษ 33000<br /><br />
+                  <strong>Phone:</strong> 045-617982<br />
+                  <strong>Email:</strong> grad@sskru.ac.th<br />
                 </p>
                 <div class="social-links mt-3">
                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -947,9 +1130,9 @@
             </div>
 
             <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Our Newsletter</h4>
-              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-              <form action="" method="post"><input type="email" name="email" /><input type="submit" value="Subscribe" /></form>
+              <h4>ลงทะเบียนรับข่าวสาร</h4>
+              <p>ทำการบันทึกอีเมลของท่านเพื่อรับข่าวสารจากบัณฑิตฯ</p>
+              <form action="" method="post"><input type="email" name="email" /><input type="submit" value="ลงทะเบียน" /></form>
             </div>
           </div>
         </div>
@@ -957,7 +1140,7 @@
 
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Medicio</span></strong
+          &copy; Copyright <strong><span>สำนักงานบัณฑิตศึกษา,​ มหาวิทยาลัยราชภัฏศรีสะเกษ</span></strong
           >. All Rights Reserved
         </div>
         <div class="credits">
